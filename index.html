@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuestionario</title>
+	<link href="style.css" rel="stylesheet">	
+	<link href="https://fonts.google.com/specimen/Lato">
+	<script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<form id ="preguntas" name = "preguntas">
+		<h1>Bienvenid@s a Laboratrivia</h1>
+		<label for="fname">Ingresa tu nombre:</label><br>
+		<input id = "textbox" type = "text" name = "fname">
+		<input id = "btnAceptar" type = "submit" value = "Acepter" onclick="saludo();">
+
+		 <p class = "pregunta"><h3>1)  Quién canta "Wrecking ball"?</h3></p>
+		 <input type = "radio"  name = "pregunta1" value = " Jennifer López"> Jennifer López <br>
+		 <input type = "radio"  name = "pregunta1" value = "  Selena Gomez">  Selena Gomez <br>
+		 <input type = "radio"  name = "pregunta1" value = " Miley Cyrus"> Miley Cyrus <br>
+
+		 <p class = "pregunta"><h3>2). Quién canta "Halo"?</h3></p>
+		 <input type = "radio" id = "mc" name = "pregunta2" value = "Jennifer López">Jennifer López <br>
+		 <input type = "radio" id = "mc" name = "pregunta2" value = "bejoncé">Bejoncé <br>
+		 <input type = "radio" id = "mc" name = "pregunta2" value = "Rihanna"> Rihanna<br>
+
+		 <p class = "pregunta"><h3>3) Quién canta "Can´t remember forget you"?</h3></p>
+		 <input type = "radio" id = "mc" name = "pregunta3" value = "Rihanna">Rihanna <br>
+		 <input type = "radio" id = "mc" name = "pregunta3" value = "Amy lee">Amy Lee <br>
+		 <input type = "radio" id = "mc" name = "pregunta3" value = "Shakira">Shakira<br>
+
+		 <input id = "button" type = "button" value = "Enviar" onclick="check();">
+	</form>
+	<div id = "after_submit">
+ 	<p id = "seleccion_correcta"></p>
+	</div>
+</body>
+</html>
